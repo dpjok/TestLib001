@@ -9,9 +9,41 @@
 import Foundation
 
 
-class TestLib001DataUtils {
+public class TestLib001DataUtils {
     
-    class func testMethod() {
-        print("xxxx")
+    public class func testMethod1() {
+        print("TestLib001DataUtils::testMethod1")
+    }
+    internal class func testMethod2() {
+        print("TestLib001DataUtils::testMethod2")
+    }
+    private class func testMethod3() {
+        print("TestLib001DataUtils::testMethod3")
+    }
+}
+
+internal class TestLib001DataUtils2 {
+    
+    internal class func testMethod1() {
+        print("TestLib001DataUtils2::testMethod1")
+    }
+    internal class func testMethod2() {
+        print("TestLib001DataUtils2::testMethod2")
+    }
+    private class func testMethod3() {
+        print("TestLib001DataUtils2::testMethod3")
+    }
+}
+
+open class TestLib001DataUtils3 {
+    
+    open class func testMethod1() {
+        print("TestLib001DataUtils2::testMethod1")
+    }
+    internal class func testMethod2() {
+        print("TestLib001DataUtils2::testMethod2")
+    }
+    public class func testMethod3() {
+        print("TestLib001DataUtils2::testMethod3")
     }
 }
